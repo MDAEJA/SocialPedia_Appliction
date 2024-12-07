@@ -160,7 +160,7 @@ const createPost = async (req, res) => {
       firstName: userInfo.firstName,
       lastName: userInfo.lastName,
       description,
-      picturePath : `http://localhost:8090/uploads/${file.filename}`// Store the image URL in the database
+      picturePath : `https://socialpedia-appliction.onrender.com/uploads/${file.filename}`// Store the image URL in the database
     });
     const savedPost = await newPost.save();
     console.log(file);
@@ -344,7 +344,7 @@ const updateUser = async (req, res) => {
       firstName,
       lastName,
       email,
-      picturePath: `http://localhost:8090/uploads/${file.filename}`, // Add the picture path to the update object
+      picturePath: `https://socialpedia-appliction.onrender.com/uploads/${file.filename}`, // Add the picture path to the update object
     };
 
     // Update the user info
